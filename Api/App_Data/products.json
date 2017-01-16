@@ -1,0 +1,12 @@
+﻿[
+	{
+		"id": 0,
+		"name": "Floobie",
+		"retail-price": 9.99
+	},
+  {
+    "id" : 1,
+    "name" : "Squandoozle",
+    "retail-price" : 399.59
+  }
+]

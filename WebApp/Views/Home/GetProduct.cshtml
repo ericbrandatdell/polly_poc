@@ -1,0 +1,18 @@
+﻿@model Models.Product
+@{ ViewBag.Title = "Product Page"; }
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+@if (Model != null)
+{
+	<p>
+		ID: &nbsp;@Html.DisplayTextFor(model => model.Id)<br />
+		Name: &nbsp;@Html.DisplayTextFor(model => model.Name)<br />
+		Retail Price:&nbsp;@Html.DisplayTextFor(model => model.RetailPrice)
+	</p>
+}
+else
+{
+	<p>No product was retrieved.</p>
+}

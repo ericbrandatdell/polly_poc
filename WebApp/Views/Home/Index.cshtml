@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Resiliency Frameworks</h2>
+        <p>
+            A resiliency framework enables developers to provide and maintain an acceptable level of service in the face of faults and
+			challenges to normal software operation. A good resiliency framework allows developers to define various policies that
+			control the way external services are called and the ways in which those services' return values are interpreted and acted upon. Some
+			examples of policies include:
+
+			<dl>
+				<dt>Retry</dt>
+				<dd>
+					<p>Many faults are transient and may self-correct after a short delay.</p>
+				</dd>
+				
+				<dt>Circuit-Breaker</dt>
+				<dd>
+					<p>When a system is seriously struggling, failing fast is better than making users/callers wait.</p>
+					<p>Protecting a faulting system from overload can help it recover.</p>
+				</dd>
+
+				<dt>Timeout</dt>
+				<dd>
+					<p>Beyond a certain wait, a success result is unlikely.</p>
+				</dd>
+
+				<dt>Bulkhead Isolation</dt>
+				<dd>
+					<p>When a process faults, multiple failing calls backing up can easily swamp resource (eg threads/CPU) in a host.</p>
+					<p>faulting downstream system can also cause 'backed-up' failing calls upstream.</p>
+					<p>Both risk a faulting process bringing down a wider system.</p>
+				</dd>
+
+				<dt>Cache</dt>
+				<dd>
+					<p>Some proportion of requests may be similar.</p>
+				</dd>
+
+				<dt>Fallback</dt>
+				<dd>
+					<p>Things will still fail - plan what you will do when that happens.</p>
+				</dd>
+
+				<dt>Policy Wrap</dt>
+				<dd>
+					<p>Different faults require different strategies; resilience means using a combination.</p>
+				</dd>
+			</dl>
+        </p>
+    
+	</div>
+</div>

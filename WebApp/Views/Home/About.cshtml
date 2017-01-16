@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<h2>About This Proof-of-Concept</h2>
+
+<p>
+	This proof-of-concept implements the "Polly" resiliency framework in the consumption of a simple REST service. The following
+	"n-tier" architecture was used for simplicity and ease of understanding:<br />
+	<img src="~/Content/n-tier.jpg" />
+</p>
+
+<p>
+	Very little custom code needs to be implemented to take advantage of the Polly resiliency framework. First, various policies
+	should be defined and made available to the application via a Singleton factory:<br />
+	<img src="~/Content/resiliency-policy.jpg" />
+</p>
+
+<p>
+	Then, service calls are provided to a specific policy's "Execute()" method as an Action delegate:<br />
+	<img src="~/Content/provider-code.jpg" />
+</p>
+
+<p>
+	<a class="btn btn-default" href="https://github.com/App-vNext/Polly" target="_blank">Learn more &raquo;</a>
+</p>
